@@ -89,6 +89,11 @@ export type DatabaseConfig = {
           provider: 'sqlite';
         }
     )
+  | {
+      /** @deprecated The `adapter` option is deprecated. Please use `{ provider: '...' }` */
+      adapter?: undefined;
+      provider: 'mongodb';
+    }
 );
 
 // config.ui
