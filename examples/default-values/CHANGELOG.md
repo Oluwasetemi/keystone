@@ -1,5 +1,20 @@
 # @keystone-next/example-default-values
 
+## 1.0.8
+
+### Patch Changes
+
+- [#6409](https://github.com/keystonejs/keystone/pull/6409) [`3ece149e5`](https://github.com/keystonejs/keystone/commit/3ece149e53066661c57c56fdd1467003c5b11c06) Thanks [@timleslie](https://github.com/timleslie)! - Upgraded Apollo Server to [Version 3](https://www.apollographql.com/docs/apollo-server/migration/).
+
+  The Apollo documentation contains a full list of breaking changes introduced by this update.
+  You can configure the Apollo Server provided by Keystone using the [`graphql.apolloConfig`](https://keystonejs.com/docs/apis/config#graphql) configuration option.
+
+  The most prominant change for most users will be that the GraphQL Playground has been replaced by the Apollo Sandbox.
+  If you prefer to keep the GraphQL Playground, you can configure your server by [following these instructions](https://www.apollographql.com/docs/apollo-server/migration/#graphql-playground).
+
+- Updated dependencies [[`3ece149e5`](https://github.com/keystonejs/keystone/commit/3ece149e53066661c57c56fdd1467003c5b11c06), [`ce0428b93`](https://github.com/keystonejs/keystone/commit/ce0428b93c2a87fb5b706b8bc44edf16e4cd021e), [`144f7f8e4`](https://github.com/keystonejs/keystone/commit/144f7f8e4e13ec547865927cb224fea7165b98b7), [`c1401d480`](https://github.com/keystonejs/keystone/commit/c1401d48002f03f49c2a09b96a3d6a89aeb8e3db), [`1659e1fe5`](https://github.com/keystonejs/keystone/commit/1659e1fe5e0f394df058b3a773ea62bf392fa8db)]:
+  - @keystone-next/keystone@26.0.0
+
 ## 1.0.7
 
 ### Patch Changes

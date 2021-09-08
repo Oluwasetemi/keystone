@@ -1,5 +1,27 @@
 # @keystone-next/keystone
 
+## 26.0.0
+
+### Major Changes
+
+- [#6409](https://github.com/keystonejs/keystone/pull/6409) [`3ece149e5`](https://github.com/keystonejs/keystone/commit/3ece149e53066661c57c56fdd1467003c5b11c06) Thanks [@timleslie](https://github.com/timleslie)! - Upgraded Apollo Server to [Version 3](https://www.apollographql.com/docs/apollo-server/migration/).
+
+  The Apollo documentation contains a full list of breaking changes introduced by this update.
+  You can configure the Apollo Server provided by Keystone using the [`graphql.apolloConfig`](https://keystonejs.com/docs/apis/config#graphql) configuration option.
+
+  The most prominant change for most users will be that the GraphQL Playground has been replaced by the Apollo Sandbox.
+  If you prefer to keep the GraphQL Playground, you can configure your server by [following these instructions](https://www.apollographql.com/docs/apollo-server/migration/#graphql-playground).
+
+### Patch Changes
+
+- [#6498](https://github.com/keystonejs/keystone/pull/6498) [`ce0428b93`](https://github.com/keystonejs/keystone/commit/ce0428b93c2a87fb5b706b8bc44edf16e4cd021e) Thanks [@timleslie](https://github.com/timleslie)! - Fixed an issue where the incorrect value for the `operation` argument was passed into field-level access control functions. Keystone now correctly passes in `'read'` rather than the incorrect `'query'`.
+
+* [#6487](https://github.com/keystonejs/keystone/pull/6487) [`144f7f8e4`](https://github.com/keystonejs/keystone/commit/144f7f8e4e13ec547865927cb224fea7165b98b7) Thanks [@timleslie](https://github.com/timleslie)! - Fixed type definition of `ValidationArgs['addValidationError']`.
+
+- [#6477](https://github.com/keystonejs/keystone/pull/6477) [`c1401d480`](https://github.com/keystonejs/keystone/commit/c1401d48002f03f49c2a09b96a3d6a89aeb8e3db) Thanks [@gautamsi](https://github.com/gautamsi)! - Fixed windows issues with new view resolver from #6414.
+
+* [#6482](https://github.com/keystonejs/keystone/pull/6482) [`1659e1fe5`](https://github.com/keystonejs/keystone/commit/1659e1fe5e0f394df058b3a773ea62bf392fa8db) Thanks [@timleslie](https://github.com/timleslie)! - Cleaned up the formatting of GraphQL error messages result from Prisma errors.
+
 ## 25.0.1
 
 ### Patch Changes
